@@ -37,21 +37,43 @@
 <div id="fullpage">
 <div class="section" id="section0">
 <div class="intro">
-<div class="grid-container">
-	<div class="grid-content1">
-		<h1>All Open Source,​<br>No CVEs.</h1>
-		<br><br>
-		<p><b>Creating open source?</b>&nbsp; Sign up for an account on SOSSHub to easily monetize your work on the world’s first platform for secure open source software.</p>
-		<p><b>Using open source?</b>&nbsp; We’re the only platform securing previous stable versions and abandonware for <i>all</i> the open source your <a href="busin.html" class="classic"><b><u>business</u></b></a> is using.</p>
-		<br><br>
-		<div style="display: flex; justify-content: center; align-items: center; text-align: center; gap: 15%;">
-			<a href="maint.html" class="button" style="font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 22px;">I'm a Maintainer</a>
-			<a href="devel.html" class="button2" style="font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 22px;">I'm a Developer</a>
-		</div>
-	</div>
-	<div class="grid-content2">
-	</div>
-</div>
+<table style="width:80%">
+	<tr>
+		<th style="width:100%">
+			<p>SOSSHub is currently in closed beta.&nbsp; We expect it to be generally available in the 4th quarter of this year.​</p>
+			<br>
+			<p>If you'd like to be notified when SOSSHub launches publicly, sign up below:​</p>
+			<p style="font-size:1em"><i>​* required field</i>​</p>
+			<br>
+			<form autocomplete="on">
+				<label for="email">Email *</label><br>
+				<input type="email" id="email" name="email" autocomplete="email" required>
+				<br><br>
+				<label for="firstname">First Name</label><br>
+				<input type="text" id="firstname" name="firstname" autocomplete="given-name">
+				<br><br>
+				<label for="lastname">Last Name</label><br>
+				<input type="text" id="lastname" name="lastname" autocomplete="family-name">
+				<br><br>
+				<label for="company">Employer</label><br>
+				<input type="text" id="company" name="company" autocomplete="organization">
+				<br><br>
+				<p style="font-size:1.25em">I am primarily interested in using SOSSHub:</p>
+				<input type="radio" id="personal" name="interest" value="personal">
+				<label for="personal">Personally</label>
+				<br>
+				<input type="radio" id="commercial" name="interest" value="commercial">
+				<label for="commercial">Commercially</label>
+				<br><br>
+				<input type="checkbox" id="beta" name="beta">
+				<label for="beta">Apply to join the closed beta <i>(please fill in optional fields)</i></label>
+				<br><br><br>
+				<input type="submit" value="Notify Me">
+			</form>
+			<br>
+		</th>
+	</tr>
+</table>
 </div>
 </div>
 </div>
@@ -108,7 +130,7 @@
 						<a href="busin.html">Businesses</a>
 					</div>
 					<div class="topnav-right" style="display: flex; justify-content: flex-end; margin-top: 20px;">
-						<a href="mlist.html" class="button" style="margin-right: 60px;margin-top: -15px;">Sign Up</a>
+						<a href="mlist.html" class="button" style="margin-right: 60px;margin-top: -15px; color:#00cc66;">Sign Up</a>
 					</div>
 				</div>
 			`;

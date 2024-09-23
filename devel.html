@@ -37,19 +37,80 @@
 <div id="fullpage">
 <div class="section" id="section0">
 <div class="intro">
+<table style="width:80%">
+	<tr>
+		<th style="width:100%">
+			<p><b>Your path to no open source CVEs:</b></p>
+			<br><br>
+			<p>1.&nbsp;&nbsp;&nbsp; Integrate SOSSHub with your binary repo product.​</p>
+			<p>2.&nbsp;&nbsp; Subscribe to open source packages that you want pushed to your binary repo.​</p>
+			<p>3.&nbsp;&nbsp; Watch the magic as secure open source software flows into your CI/CD pipeline.​</p>
+			<br><br>
+			<div id="bonus"><p>Bonus: Give your CISO and General Counsel access to the OSS security and licensing data they need.​</p></div>
+		</th>
+	</tr>
+</table>
+</div>
+</div>
+<div class="section" id="section1">
+<div class="intro">
 <div class="grid-container">
 	<div class="grid-content1">
-		<h1>All Open Source,​<br>No CVEs.</h1>
-		<br><br>
-		<p><b>Creating open source?</b>&nbsp; Sign up for an account on SOSSHub to easily monetize your work on the world’s first platform for secure open source software.</p>
-		<p><b>Using open source?</b>&nbsp; We’re the only platform securing previous stable versions and abandonware for <i>all</i> the open source your <a href="busin.html" class="classic"><b><u>business</u></b></a> is using.</p>
-		<br><br>
-		<div style="display: flex; justify-content: center; align-items: center; text-align: center; gap: 15%;">
-			<a href="maint.html" class="button" style="font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 22px;">I'm a Maintainer</a>
-			<a href="devel.html" class="button2" style="font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 22px;">I'm a Developer</a>
-		</div>
+			<p>
+			<b>Code Distribution</b><br>
+			Kosai's Secure Package Distribution System is a complete configuration tool that allows you to define package sets and distribution channels to streamline the continuous delivery of secured packages.&nbsp; Scroll down to learn more about the different package formats we support.<br>
+			<br>
+			<b>Secured Package Request</b><br>
+			Can't find the package or version you're looking for in Kosai's Secured Package Library?&nbsp; We make it easy to request a package and version, and deliver a Kosai-secured package within minutes.<br>
+			<br>
+			<b>Project Feature Request</b><br>
+			Kosai's feature request mechanism provides a monetary incentive to encourage the prioritization of features that matter to you.&nbsp; Once completed, Kosai will secure the new version before notifying you a new version with your feature request is available.
+		</p>
 	</div>
 	<div class="grid-content2">
+	</div>
+</div>
+</div>
+</div>
+<div class="section" id="section2">
+<div class="intro">
+<div class="grid-container">
+	<div class="grid-content1">
+		<p>
+			Whether you're managing software dependencies, libraries, or artifacts, Kosai offers robust options to streamline your development workflow.<br>
+			<br>
+			<b>Binary Repository Solutions</b><br>
+		</p>
+		<ul class="bullet-list">
+			<li>JFrog Artifactory</li>
+			<li>Sonatype Nexus Repository</li>
+		</ul>
+		<p>
+			<br>
+			<b>Package Managers</b><br>
+		</p>
+		<ul class="bullet-list">
+			<li>apt</li>
+			<li>Conan</li>
+			<li>Docker</li>
+			<li>Maven</li>
+			<li>npm</li>
+			<li>NuGet</li>
+			<li>PyPI</li>
+			<li>rpm</li>
+		</ul>
+	</div>
+	<div class="grid-content2">
+		<p>
+			<br><br>
+			<b>Why Choose Our Solutions?</b><br>
+		</p>
+		<ul class="bullet-list">
+			<li>Reliability: Ensure your open source code is always accessible and secure.</li>
+			<li>Efficiency: Simplify your dev process with automated dependency management.</li>
+			<li>Security: Protect your software supply chain with built-in security features and zero vuln packages.</li>
+			<li>Flexibility: Adapt to your needs with support for a wide range of environments.</li>
+		</ul>
 	</div>
 </div>
 </div>
@@ -66,11 +127,26 @@
 </ul>
 </div>
 <script type="text/javascript">
+	var blockScroll = false;
+	var hasBlockedOnce = false;
 	var myFullpage = new fullpage('#fullpage', {
 		licenseKey: 'gplv3-license',
 		sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
+		navigation: true,
 		credits: {enabled: false},
 		css3: true,
+		onLeave: function(origin, destination, direction, trigger){
+			var leavingSection = this;
+			if(origin.index == 0 && direction =='down' && !blockScroll && !hasBlockedOnce){
+				document.querySelector('#bonus').style.opacity = "1";
+				blockScroll = true;
+				hasBlockedOnce = true;
+				return false;
+			}
+			else if(blockScroll){
+				blockScroll = false;
+			}
+		},
 	});
 </script>
 <script type="text/javascript">
@@ -104,7 +180,7 @@
 					</div>
 					<div class="topnav-centered" style="display: flex; justify-content: center; margin-top: 20px;">
 						<a href="maint.html" style="margin-right: 60px;">Maintainers</a>
-						<a href="devel.html" style="margin-right: 60px;">Developers</a>
+						<a href="devel.html" style="margin-right: 60px; color:#0066cc;">Developers</a>
 						<a href="busin.html">Businesses</a>
 					</div>
 					<div class="topnav-right" style="display: flex; justify-content: flex-end; margin-top: 20px;">

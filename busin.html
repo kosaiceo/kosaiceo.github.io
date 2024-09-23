@@ -39,15 +39,45 @@
 <div class="intro">
 <div class="grid-container">
 	<div class="grid-content1">
-		<h1>All Open Source,​<br>No CVEs.</h1>
+		<h1 style="font-size: 2.5em;">Innovate fearlessly, scale securely.</h1>
+		<br>
+		<p>Military-grade patches for open source software, ensuring your growth in unstoppable.</p>
+		<br><br><br>
+		<p id="bullet-list-head"><b>Why businesses choose Kosai for OSS security:</b></p>
+		<ul class="bullet-list">
+			<li><b>Zero-Day Security -</b> Move beyond alerts with continuous security updates for your open source software, including abandonware.​</li>
+			<li><b>Total Control -</b> Gain complete version control via seamless integration with your existing SDLC processes.</li>
+			<li><b>Regulatory Compliance -</b> Enable innovation while meeting all compliance requirements across departments.</li>
+			<li><b>Sustainable OSS -</b> Reduce risks by funding maintainers you rely on, ensuring the longevity and reliability of your OSS.</li>
+		</ul>
+	</div>
+	<div class="grid-content2">
+	</div>
+</div>
+</div>
+</div>
+<div class="section" id="section1">
+<div class="intro">
+<div class="grid-container">
+	<div class="grid-content1">
+		<h1 style="font-size: 2.5em;">Proven ROI.</h1>
+		<br><br><br>
+		<p>Three approaches to open source software supply chain risk:</p>
+	</div>
+	<div class="grid-content2">
+	</div>
+</div>
+<br>
+<div id="roi"></div>
+</div>
+</div>
+<div class="section" id="section2">
+<div class="intro">
+<div class="grid-container">
+	<div class="grid-content1">
+		<h1 style="font-size: 2.5em;">Stop accepting open source risk.</h1>
 		<br><br>
-		<p><b>Creating open source?</b>&nbsp; Sign up for an account on SOSSHub to easily monetize your work on the world’s first platform for secure open source software.</p>
-		<p><b>Using open source?</b>&nbsp; We’re the only platform securing previous stable versions and abandonware for <i>all</i> the open source your <a href="busin.html" class="classic"><b><u>business</u></b></a> is using.</p>
-		<br><br>
-		<div style="display: flex; justify-content: center; align-items: center; text-align: center; gap: 15%;">
-			<a href="maint.html" class="button" style="font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 22px;">I'm a Maintainer</a>
-			<a href="devel.html" class="button2" style="font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 22px;">I'm a Developer</a>
-		</div>
+		<p>Adversaries are already using AI to scale their capabilities.  Stay one step ahead, and <b>start reducing open source risk now with Kosai.​​</b></p>
 	</div>
 	<div class="grid-content2">
 	</div>
@@ -69,6 +99,7 @@
 	var myFullpage = new fullpage('#fullpage', {
 		licenseKey: 'gplv3-license',
 		sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
+		navigation: true,
 		credits: {enabled: false},
 		css3: true,
 	});
@@ -105,7 +136,7 @@
 					<div class="topnav-centered" style="display: flex; justify-content: center; margin-top: 20px;">
 						<a href="maint.html" style="margin-right: 60px;">Maintainers</a>
 						<a href="devel.html" style="margin-right: 60px;">Developers</a>
-						<a href="busin.html">Businesses</a>
+						<a href="busin.html" style="color:#0066cc;">Businesses</a>
 					</div>
 					<div class="topnav-right" style="display: flex; justify-content: flex-end; margin-top: 20px;">
 						<a href="mlist.html" class="button" style="margin-right: 60px;margin-top: -15px;">Sign Up</a>
@@ -116,6 +147,90 @@
 	}
 	updateHeader();
 	window.addEventListener('resize', updateHeader);
+	function updateRoi() {
+		var width = window.innerWidth;
+		if (width <= 1300) {
+			document.getElementById('roi').innerHTML = `
+				<table style="width:80%">
+					<tr>
+						<th style="width:100%">
+							<p><b>Accept it.</b></p>
+							<ul class="bullet-list">
+								<li>$90,000 every 2 years -​ OSS breach incident response cost</li>
+								<li>$200,000 every 3 years -​ minor OSS CVE remediation cost</li>
+								<li>$2,000,000 every 10 years -​ major OSS CVE remediation cost</li>
+							</ul>
+							<br>
+							<p><b>$311,667​</b> - avg annual cost</p>
+							<br>
+						</th>
+					</tr>
+					<tr>
+						<th style="width:100%">
+							<p><b>Reduce it.</b></p>
+							<ul class="bullet-list">
+								<li>$700,000 -​ four software engineers (fully loaded cost) to maintain 500 most critical OSS dependencies</li>
+								<li>$75,000 -​ SCA (software composition analysis) tool cost</li>
+							</ul>
+							<br>
+							<p><b>$775,000</b> - annual cost</p>
+							<br>
+						</th>
+					</tr>
+					<tr>
+						<th style="width:100%">
+							<p><b>Kosai it.</b></p>
+							<ul class="bullet-list">
+								<li>$74,250 -​ SOSSHub Enterprise subscription for 500 packages</li>
+							</ul>
+							<br>
+							<p><b>$74,250​</b> - annual cost</p>
+						</th>
+					</tr>
+				</table>
+			`;
+		} else {
+			document.getElementById('roi').innerHTML = `
+				<table style="width:80%">
+					<tr>
+						<th style="width:30%">
+							<p><b>Accept it.</b></p>
+							<ul class="bullet-list">
+								<li>$90,000 every 2 years -​ OSS breach incident response cost</li>
+								<li>$200,000 every 3 years -​ minor OSS CVE remediation cost</li>
+								<li>$2,000,000 every 10 years -​ major OSS CVE remediation cost</li>
+							</ul>
+							<br>
+							<p><b>$311,667​</b> - avg annual cost</p>
+						</th>
+						<th style="width:5%"></th>
+						<th class="split-align" style="width:30%">
+							<div>
+								<p><b>Reduce it.</b></p>
+								<ul class="bullet-list">
+									<li>$700,000 -​ four software engineers (fully loaded cost) to maintain 500 most critical OSS dependencies</li>
+									<li>$75,000 -​ SCA (software composition analysis) tool cost</li>
+								</ul>
+							</div>
+							<div class="last-line"><p><b>$775,000</b> - annual cost</p></div>
+						</th>
+						<th style="width:5%"></th>
+						<th class="split-align" style="width:30%">
+							<div>
+								<p><b>Kosai it.</b></p>
+								<ul class="bullet-list">
+									<li>$74,250 -​ SOSSHub Enterprise subscription for 500 packages</li>
+								</ul>
+							</div>
+							<div class="last-line"><p><b>$74,250​</b> - annual cost</p></div>
+						</th>
+					</tr>
+				</table>
+			`;
+		}
+	}
+	updateRoi();
+	window.addEventListener('resize', updateRoi);
 </script>
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/46948547.js"></script>
 </body>

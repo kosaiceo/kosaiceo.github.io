@@ -26,6 +26,7 @@
 <link rel="icon" href="kosai-brand-c.ico" type="image/x-icon">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 <!--[if IE]>
 		<script type="text/javascript">
 			var console = { log: function() {} };
@@ -39,15 +40,69 @@
 <div class="intro">
 <div class="grid-container">
 	<div class="grid-content1">
-		<h1>All Open Source,​<br>No CVEs.</h1>
-		<br><br>
-		<p><b>Creating open source?</b>&nbsp; Sign up for an account on SOSSHub to easily monetize your work on the world’s first platform for secure open source software.</p>
-		<p><b>Using open source?</b>&nbsp; We’re the only platform securing previous stable versions and abandonware for <i>all</i> the open source your <a href="busin.html" class="classic"><b><u>business</u></b></a> is using.</p>
-		<br><br>
-		<div style="display: flex; justify-content: center; align-items: center; text-align: center; gap: 15%;">
-			<a href="maint.html" class="button" style="font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 22px;">I'm a Maintainer</a>
-			<a href="devel.html" class="button2" style="font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 22px;">I'm a Developer</a>
+		<p><b><span id="typed1"></span>the open source maintainer's dilemma.</b></p>
+		<br>
+		<p>Phase 1: Code</p>
+		<p>Phase 2: <span id="typed2">?</span></p>
+		<p>Phase 3: Profit</p>
+	</div>
+	<div class="grid-content2">
+	</div>
+</div>
+</div>
+</div>
+<div class="section" id="section1">
+<div class="intro">
+<div class="grid-container">
+	<div class="grid-content1">
+		<p><b>Kosai gives you:</b></p>
+		<br>
+		<div style="display: flex; align-items: center;">
+			<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+			<p style="margin-bottom: 15px; margin-left: 10px;">Customers</p>
 		</div>
+		<div class="collapse-content">
+			<p style="margin-left: 40px;">- use the easiest OSS monetization strategy​</p><br>
+		</div>
+		<div style="display: flex; align-items: center;">
+			<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+			<p style="margin-bottom: 15px; margin-left: 10px;">Security patches</p>
+		</div>
+		<div class="collapse-content">
+			<p style="margin-left: 40px;">- integrate our code into main if you want to​</p><br>
+		</div>
+		<div style="display: flex; align-items: center;">
+			<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+			<p style="margin-bottom: 15px; margin-left: 10px;">Usage Data</p>
+		</div>
+		<div class="collapse-content">
+			<p style="margin-left: 40px;">- see what customers are using and what features they want​​</p><br>
+		</div>
+		<br><br><br>
+	</div>
+	<div class="grid-content2">
+		<p><b>You owe Kosai:</b></p>
+		<br>
+		<div style="display: flex; align-items: center;">
+			<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+			<p style="margin-bottom: 15px; margin-left: 10px;">Nothing</p>
+		</div>
+		<div class="collapse-content">
+			<p style="margin-left: 40px;">- spend your money your way​</p><br>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="section" id="section2">
+<div class="intro">
+<div class="grid-container">
+	<div class="grid-content1">
+			<p>If Kosai customers are using your projects, <b>you are already accruing earnings on SOSSHub.</b>&nbsp; We hold earnings for unclaimed projects for one year, at which point we donate the excess to open source foundations.</p>
+			<br>
+			<p><b>Your project earns revenue based on its popularity.</b>&nbsp; If a single developer is donating $10 a month and is subscribed to 5 packages, including yours, you will receive $2 a month.&nbsp; Your earnings are based on the specific amounts being spent by specific users, rather than an aggregate share of all revenue.​​</p>
+			<br>
+			<p>As the popularity of your projects and the SOSSHub platform grow, your earnings will increase.&nbsp; <b>Kosai boosts revenue share percentages for maintainers that help grow SOSSHub,</b> because we believe you should be paid for your work.​</p>
 	</div>
 	<div class="grid-content2">
 	</div>
@@ -69,8 +124,49 @@
 	var myFullpage = new fullpage('#fullpage', {
 		licenseKey: 'gplv3-license',
 		sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
+		navigation: true,
 		credits: {enabled: false},
 		css3: true,
+	});
+</script>
+<script type="text/javascript">
+	var typed1 = new Typed("#typed1", {
+		strings: ["Kosai solves "],
+		typeSpeed: 45,
+		startDelay: 2000,
+		loop: false,
+	});
+	setTimeout(function() {
+		document.getElementById('typed2').innerHTML = '';
+		var typed2 = new Typed("#typed2", {
+			strings: ["Kosai"],
+			typeSpeed: 45,
+			startDelay: 90,
+			loop: false,
+		});
+	}, 4000);
+</script>
+<script type="text/javascript">
+	var buttons = document.querySelectorAll(".toggle-button");
+	buttons.forEach(function(button) {
+		button.addEventListener("click", function() {
+			this.classList.toggle("expand-icon");
+			this.classList.toggle("collapse-icon");
+			var content = this.parentNode.nextElementSibling;
+			if (content.style.display === "block") {
+				content.style.display = "none";
+			} else {
+				content.style.display = "block";
+			}
+		});
+	});
+	window.addEventListener("load", function() {
+		if (window.innerWidth > 700) {
+			var contents = document.querySelectorAll(".collapse-content");
+			contents.forEach(function(content) {
+				content.style.display = "block";
+			});
+		}
 	});
 </script>
 <script type="text/javascript">
@@ -103,7 +199,7 @@
 						<a href="index.html"><img src="kosai-logo-c.png" alt="Kosai" style="height:70px;margin-left: 15px;"></a>
 					</div>
 					<div class="topnav-centered" style="display: flex; justify-content: center; margin-top: 20px;">
-						<a href="maint.html" style="margin-right: 60px;">Maintainers</a>
+						<a href="maint.html" style="margin-right: 60px; color:#0066cc;">Maintainers</a>
 						<a href="devel.html" style="margin-right: 60px;">Developers</a>
 						<a href="busin.html">Businesses</a>
 					</div>
