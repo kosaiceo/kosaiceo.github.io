@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kosai</title>
+<meta name="author" content="Kosai, Inc." />
+<meta name="keywords" content="oss,soss,kosai,sosshub,open source,open-source,opensource,software,sca,appsec,secure,cyber,security,cybersecurity,application,composition analysis,marketplace,market,monetization" />
+<meta name="Resource-type" content="Document" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+	function updateViewport() {
+		var viewport = document.querySelector("meta[name=viewport]");
+		if (window.innerWidth < 1020) {
+			viewport.setAttribute("content", "width=device-width, initial-scale=0.67");
+		} else {
+			viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
+		}
+	}
+	window.addEventListener('resize', updateViewport);
+	window.addEventListener('load', updateViewport);
+</script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" />
+<link rel="stylesheet" type="text/css" href="menu.css" />
+<link rel="stylesheet" type="text/css" href="kosai.css" />
+<link rel="icon" href="kosai-brand-c.ico" type="image/x-icon">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
+<!--[if IE]>
+		<script type="text/javascript">
+			var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+<div id="header"></div>
+<div id="fullpage">
+<div class="section" id="section0">
+<div class="intro">
+<br>
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: row; margin: 20px;">
+	<p style="margin: initial; margin-right: 7.5%;"><b>Do you own an open source project?​</b><br>
+	<span style="font-size: 17px;"><i>You’ll automatically get a free Enthusiast subscription.​</i></span></p>
+	<a href="mlist.html" class="button" style="margin-top: -2px; font-family: 'Montserrat',sans-serif; font-weight: 400; font-size: 1.5em;"><b>Claim your Project</b></a>
+</div>
+<br><br><br>
+<div id="tiers"></div>
+<br><br><br><br><br>
+<table style="width:80%">
+	<tr>
+		<th style="width:100%">
+			<h1 style="color: #000000; font-size: 2em;">FAQ</h1>
+			<br>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">Which subscription is right for me?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">Kosai recommends everyone starts on Enthusiast tier at $0 a month.&nbsp; ​This is effectively a free trial and you can stay on it forever.&nbsp; Even if you are using SOSSHub in commercial settings, you only have to upgrade immediately prior to moving test code into production for the first time, or immediately prior to shipping software to customers.&nbsp; Feel free to prototype while on the Enthusiast tier as long as you respect the server limit.</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">What counts as commercial use?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">Commercial use is any production use of SOSSHub content on any computer owned by any legal entity (as opposed to a natural person), even a sole proprietorship.​</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">How does Kosai define resale?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">Resale is when any SOSSHub content is contained within another piece of software that ​is provided by a legal entity to any other non-affiliated legal entity, even if it is done free of charge.</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">How does Kosai define a package subscription?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">The combination of a package name and a version number counts as one package subscription.&nbsp; Your subscription includes continuous monitoring and unlimited patching for unlimited CVEs of the package/version combo for the term of your contract.</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">How does Kosai define a server?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">Any single collection of computer hardware serving data, services or resources to clients over a network.&nbsp; Client computers do not count as servers and all SOSSHub users receive unlimited clients.&nbsp; Infinite VMs running on infinite cores on infinite chips on infinite boards on one motherboard is one server.</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">What if I can't find a package I am interested in?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">Within the SOSSHub platform, there is an unlimited package request feature available to Enterprise and Embedded tier users.&nbsp; Enthusiast tier users have access to a limited number of requests.&nbsp; Submit your request, go for a walk, and it should be ready by the time you get back.​</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">Does 100% of my Enthusiast tier donation really go to the community?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">Technically, no.&nbsp; Kosai isn't a bank, so transaction fees​ come out of the total.&nbsp; Outside of that, yes, all of the rest does actually go to the community.&nbsp; Kosai also does its best to reduce transaction fees on our end, and you can do the same by paying via ETF instead of credit card if you like.</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">Can I control where my donation goes?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">Absolutely!&nbsp; Subscribe to packages you want to donate to, and unsubscribe from packages you no longer want to donate to.&nbsp; Kosai will handle the rest.</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">How is my donation distributed to the community?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">Every month, Kosai divides your donation by the number of packages you are subscribed to at that time, and distributes shares to each team.&nbsp; If you are subscribed to no packages, Kosai​ will donate your contribution to an appropriate open source foundation.</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">What happens if I change my donation mid-month?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">If you increase your donation, Kosai will process the new charge immediately with an appropriate credit applied against it, and reset your monthly renewal date.&nbsp; As we have already distributed your donation​ to the community, if you decrease your donation, Kosai will process the new amount on your next monthly renewal date.</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">What happens if I need to change the amount of package subs I have purchased mid-year?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">If you increase your subscription, Kosai will prorate ​the cost over the remainder of your current annual term.&nbsp; If you decrease your subscription, Kosai will process the new amount on your next annual renewal date.&nbsp; Kosai does not issue partial refunds in this scenario.</p><br>
+			</div>
+			<div style="display: flex; align-items: center;">
+				<button class="toggle-button expand-icon" style="margin-top: -10px;"></button>
+				<p style="margin-bottom: 15px; margin-left: 10px;">How do I donate as a maintainer?</p>
+			</div>
+			<div class="collapse-content">
+				<p style="margin-left: 40px;">You have two options.&nbsp; Either start my claiming your project, then change your donation amount within the SOSSHub platform.&nbsp; Or start with an Enthusiast subscription, then claim your project ​within the SOSSHub platform.&nbsp; Please note that for security reasons, Kosai does not allow maintainers to donate to themselves.&nbsp; If you subscribe to your own package, it will be automatically ignored when calculating distribution of your specific donation.&nbsp; If you only subscribe to your own packages, Kosai treats that as zero package subs.</p><br>
+			</div>
+		</th>
+	</tr>
+</table>
+<br><br><br>
+</div>
+</div>
+</div>
+<div id="infoMenu">
+<ul>
+<li><a href="mailto:info@kosai.com">Contact</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="https://jobs.gusto.com/boards/kosai-5a063ada-3a4a-40f5-82cf-2c333784a677">Careers</a></li>
+<li><a href="privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li></li>
+<li>&copy; 2025 Kosai, Inc.</li>
+</ul>
+</div>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		licenseKey: 'gplv3-license',
+		sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
+		credits: {enabled: false},
+		css3: true,
+	});
+</script>
+<script type="text/javascript">
+	var buttons = document.querySelectorAll(".toggle-button");
+	buttons.forEach(function(button) {
+		button.addEventListener("click", function() {
+			this.classList.toggle("expand-icon");
+			this.classList.toggle("collapse-icon");
+			var content = this.parentNode.nextElementSibling;
+			if (content.style.display === "block") {
+				content.style.display = "none";
+			} else {
+				content.style.display = "block";
+			}
+		});
+	});
+</script>
+<script type="text/javascript">
+	function updateHeader() {
+		var width = window.innerWidth;
+		if (width <= 1160) {
+			document.getElementById('header').innerHTML = `
+				<div class="topnav" style="display: flex; justify-content: space-between;">
+					<div class="topnav-left" style="display: flex; justify-content: flex-start;">
+						<a href="index.html"><img src="kosai-brand-c.png" alt="Kosai" style="height:70px;margin-left: 15px;"></a>
+					</div>
+					<div class="topnav-right" style="display: flex; justify-content: flex-end; margin-top: -10px; margin-right: 20px;">
+						<input id="menu-toggle" type="checkbox" />
+						<label class='menu-button-container' for="menu-toggle">
+							<div class='menu-button'></div>
+						</label>
+						<ul class="menu">
+							<li><a href="price.html">Sign Up</a></li>
+							<li><a href="https://app.sosshub.com">Log In</a></li>
+							<li><a href="maint.html">Maintainers</a></li>
+							<li><a href="devel.html">Developers</a></li>
+							<li><a href="busin.html">Businesses</a></li>
+						</ul>
+					</div>
+				</div>
+			`;
+		} else {
+			document.getElementById('header').innerHTML = `
+				<div class="topnav" style="display: flex; justify-content: space-between;">
+					<div class="topnav-left" style="display: flex; justify-content: flex-start;">
+						<a href="index.html"><img src="kosai-logo-c.png" alt="Kosai" style="height:70px;margin-left: 15px;"></a>
+					</div>
+					<div class="topnav-centered" style="display: flex; justify-content: center; margin-top: 20px;">
+						<a href="maint.html" style="margin-right: 60px;">Maintainers</a>
+						<a href="devel.html" style="margin-right: 60px;">Developers</a>
+						<a href="busin.html">Businesses</a>
+					</div>
+					<div class="topnav-right" style="display: flex; justify-content: flex-end; margin-top: 20px;">
+						<a href="https://app.sosshub.com" style="margin-right: 60px;">Log In</a>
+						<a href="price.html" class="button" style="margin-right: 60px;margin-top: -15px; color:#00cc66;">Sign Up</a>
+					</div>
+				</div>
+			`;
+		}
+	}
+	updateHeader();
+	window.addEventListener('resize', updateHeader);
+	function updateTiers() {
+		var width = window.innerWidth;
+		if (width <= 1200) {
+			document.getElementById('tiers').innerHTML = `
+				<table style="width:85%">
+					<tr>
+						<th style="width: 100%; border: 2px solid black; border-radius: 40px; text-align: center; padding: 20px;">
+							<br>
+							<h1 style="color: #0066cc; font-size: 2em;">Enthusiast</h1>
+							<br><br>
+							<p>Use on up to 10 servers, 100 if you own a project​</p>
+							<p>Pay what you want, including zero​</p>
+							<p>100% of your donation goes to the community​</p>
+							<p>Unlimited users and package subscriptions​</p>
+							<p>No commercial use</p>
+							<br><br>
+							<h1 style="font-size: 2em;">$<input type="number" id="donationValue" step="0.01" value="2.93" style="width: 95px; height: 26px;"> /month</h1>
+							<p style="font-size: 1em;"><i>default value is average donation​</i></p>
+							<br>
+							<a href="mlist.html" class="button" style="margin-top: -2px; font-family: 'Montserrat',sans-serif; font-weight: 400; font-size: 1.5em;"><b>Sign Up</b></a>
+							<br><br>
+						</th>
+					</tr>
+					<tr><th><br><br></th></tr>
+					<tr>
+						<th style="width: 100%; border: 2px solid black; border-radius: 40px; text-align: center; padding: 20px;">
+							<br>
+							<h1 style="color: #0066cc; font-size: 2em;">Enterprise​</h1>
+							<br><br>
+							<p>Use Kosai in commercial production environments</p>
+							<p>Pay for bundles of 100 package subscriptions</p>
+							<p>Unlimited users and servers</p>
+							<p>No resale of Kosai patches</p>
+							<br><br>
+							<h1 style="font-size: 2em;">Annual Pricing​</h1>
+							<p style="font-size: 1em;"><i>contact sales​</i></p>
+							<br>
+							<a href="mailto:ent-sales@kosai.com?subject=Enterprise%20Quote%20Request&body=(describe%20a%20bit%20about%20your%20company%20and%20roughly%20how%20many%20OSS%20packages%20you%20need%20support%20for)" class="button" style="margin-top: -2px; font-family: 'Montserrat',sans-serif; font-weight: 400; font-size: 1.5em;"><b>Quote</b></a>
+							<br><br>
+						</th>
+					</tr>
+					<tr><th><br><br></th></tr>
+					<tr>
+						<th style="width: 100%; border: 2px solid black; border-radius: 40px; text-align: center; padding: 20px;">
+							<br>
+							<h1 style="color: #0066cc; font-size: 2em;">Embedded</h1>
+							<br><br>
+							<p>Use Kosai in software that you sell</p>
+							<p>Pay based on the amount of packages you need</p>
+							<p>Unlimited users and servers</p>
+							<p>Support for the entire life of your product</p>
+							<br><br>
+							<h1 style="font-size: 2em;">Perpetual Pricing​</h1>
+							<p style="font-size: 1em;"><i>contact sales​</i></p>
+							<br>
+							<a href="mailto:emb-sales@kosai.com?subject=Embedded%20Quote%20Request&body=(describe%20a%20bit%20about%20your%20company,%20your%20product,%20and%20roughly%20how%20many%20OSS%20packages%20you%20need%20support%20for)" class="button" style="margin-top: -2px; font-family: 'Montserrat',sans-serif; font-weight: 400; font-size: 1.5em;"><b>Quote</b></a>
+							<br><br>
+						</th>
+					</tr>
+				</table>
+			`;
+			reloadDonationValue();
+		} else {
+			document.getElementById('tiers').innerHTML = `
+				<table style="width:85%">
+					<tr>
+						<th style="width: 30%; border: 2px solid black; border-radius: 40px; text-align: center; padding: 20px;">
+							<br>
+							<h1 style="color: #0066cc; font-size: 2em;">Enthusiast</h1>
+							<br><br>
+							<p>Use on up to 10 servers, 100 if you own a project​</p>
+							<p>Pay what you want, including zero​</p>
+							<p>100% of your donation goes to the community​</p>
+							<p>Unlimited users and package subscriptions​</p>
+							<p>No commercial use</p>
+							<br><br>
+							<h1 style="font-size: 2em;">$<input type="number" id="donationValue" step="0.01" value="2.93" style="width: 95px; height: 26px;"> /month</h1>
+							<p style="font-size: 1em;"><i>default value is average donation​</i></p>
+							<br>
+							<a href="mlist.html" class="button" style="margin-top: -2px; font-family: 'Montserrat',sans-serif; font-weight: 400; font-size: 1.5em;"><b>Sign Up</b></a>
+							<br><br>
+						</th>
+						<th style="width:5%"></th>
+						<th style="width: 30%; border: 2px solid black; border-radius: 40px; text-align: center; position: relative;">
+							<div style="display: flex; flex-direction: column; justify-content: space-between; position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding: 20px;">
+								<div>
+									<br>
+									<h1 style="color: #0066cc; font-size: 2em;">Enterprise​</h1>
+									<br><br>
+									<p>Use Kosai in commercial production environments</p>
+									<p>Pay for bundles of 100 package subscriptions</p>
+									<p>Unlimited users and servers</p>
+									<p>No resale of Kosai patches</p>
+								</div>
+								<div>
+									<h1 style="font-size: 2em;">Annual Pricing​</h1>
+									<p style="font-size: 1em;"><i>contact sales​</i></p>
+									<br>
+									<a href="mailto:ent-sales@kosai.com?subject=Enterprise%20Quote%20Request&body=(describe%20a%20bit%20about%20your%20company%20and%20roughly%20how%20many%20OSS%20packages%20you%20need%20support%20for)" class="button" style="margin-top: -2px; font-family: 'Montserrat',sans-serif; font-weight: 400; font-size: 1.5em;"><b>Quote</b></a>
+									<br><br>
+								</div>
+							</div>
+						</th>
+						<th style="width:5%"></th>
+						<th style="width: 30%; border: 2px solid black; border-radius: 40px; text-align: center; position: relative;">
+							<div style="display: flex; flex-direction: column; justify-content: space-between; position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding: 20px;">
+								<div>
+									<br>
+									<h1 style="color: #0066cc; font-size: 2em;">Embedded</h1>
+									<br><br>
+									<p>Use Kosai in software that you sell</p>
+									<p>Pay based on the amount of packages you need</p>
+									<p>Unlimited users and servers</p>
+									<p>Support for the entire life of your product</p>
+								</div>
+								<div>
+									<h1 style="font-size: 2em;">Perpetual Pricing​</h1>
+									<p style="font-size: 1em;"><i>contact sales​</i></p>
+									<br>
+									<a href="mailto:emb-sales@kosai.com?subject=Embedded%20Quote%20Request&body=(describe%20a%20bit%20about%20your%20company,%20your%20product,%20and%20roughly%20how%20many%20OSS%20packages%20you%20need%20support%20for)" class="button" style="margin-top: -2px; font-family: 'Montserrat',sans-serif; font-weight: 400; font-size: 1.5em;"><b>Quote</b></a>
+									<br><br>
+								</div>
+							</div>
+						</th>
+					</tr>
+				</table>
+			`;
+			reloadDonationValue();
+		}
+	}
+	updateTiers();
+	window.addEventListener('resize', updateTiers);
+</script>
+<script type="text/javascript">
+	function appendNumber() {
+		var num = document.getElementById("donationValue").value;
+		num = num.replace('.', '');
+		var link = document.getElementById("donationLink");
+		link.href += num;
+	}
+	function attachEventListener() {
+		document.getElementById('donationValue').addEventListener('change', function (e) {
+			let value = parseFloat(e.target.value);
+			if (value < 0) {
+				value = 0;
+			} else if (value > 0 && value < 1) {
+				value = Math.round(value);
+			}
+			e.target.value = value.toFixed(2);
+		});
+	}
+	document.addEventListener('DOMContentLoaded', function () {
+		attachEventListener();
+	});
+	function reloadDonationValue() {
+		attachEventListener();
+	}
+	window.addEventListener('resize', updateTiers);
+	updateTiers();
+</script>
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/46948547.js"></script>
+</body>
+</html>
